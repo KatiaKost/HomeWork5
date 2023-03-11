@@ -1,0 +1,174 @@
+public class Exercise13_15 {
+    public static void main(String[] args) {
+        System.out.println("Задание 3.13");
+        boolean result;
+        boolean a, b;
+        boolean x, y;
+        // а)
+        a = true;
+        b = true;
+        result = !(a && b);
+        System.out.println("При a = true, b = true выражение !(a && b) = " + result);
+        a = true;
+        b = false;
+        result = !(a && b);
+        System.out.println("При a = true, b = false выражение !(a && b) = " + result);
+        a = false;
+        b = true;
+        result = !(a && b);
+        System.out.println("При a = false, b = true выражение !(a && b) = " + result);
+        a = false;
+        b = false;
+        result = !(a && b);
+        System.out.println("При a = false, b = false выражение !(a && b) = " + result);
+        System.out.println();
+        // б)
+        a = true;
+        b = true;
+        result = !a || b;
+        System.out.println("При a = true, b = true выражение !a || b = " + result);
+        a = true;
+        b = false;
+        result = !a || b;
+        System.out.println("При a = true, b = false выражение !a || b = " + result);
+        a = false;
+        b = true;
+        result = !a || b;
+        System.out.println("При a = false, b = true выражение !a || b = " + result);
+        a = false;
+        b = false;
+        result = !a || b;
+        System.out.println("При a = false, b = false выражение !a || b = " + result);
+        System.out.println();
+        // в)
+        a = true;
+        b = true;
+        result = a || !b;
+        System.out.println("При a = true, b = true выражение a || !b = " + result);
+        a = true;
+        b = false;
+        result = a || !b;
+        System.out.println("При a = true, b = false выражение a || !b = " + result);
+        a = false;
+        b = true;
+        result = a || !b;
+        System.out.println("При a = false, b = true выражение a || !b = " + result);
+        a = false;
+        b = false;
+        result = a || !b;
+        System.out.println("При a = false, b = false выражение a || !b = " + result);
+        System.out.println();
+
+        System.out.println("Задание 3.14");
+        // а)
+        x = true;
+        y = true;
+        result = !(x || y);
+        System.out.println("При x = true, y = true выражение !(x || y) = " + result);
+        x = true;
+        y = false;
+        result = !(x || y);
+        System.out.println("При x = true, y = false выражение !(x || y) = " + result);
+        x = false;
+        y = true;
+        result = !(x || y);
+        System.out.println("При x = false, y = true выражение !(x || y) = " + result);
+        x = false;
+        y = false;
+        result = !(x || y);
+        System.out.println("При x = false, y = false выражение !(x || y) = " + result);
+        System.out.println();
+        // б)
+        x = true;
+        y = true;
+        result = !x && y;
+        System.out.println("При x = true, y = true выражение !x && y = " + result);
+        x = true;
+        y = false;
+        result = !x && y;
+        System.out.println("При x = true, y = false выражение !x && y = " + result);
+        x = false;
+        y = true;
+        result = !x && y;
+        System.out.println("При x = false, y = true выражение !x && y = " + result);
+        x = false;
+        y = false;
+        result = !x && y;
+        System.out.println("При x = false, y = false выражение !x && y = " + result);
+        System.out.println();
+        // в)
+        x = true;
+        y = true;
+        result = x && !y;
+        System.out.println("При x = true, y = true выражение x && !y = " + result);
+        x = true;
+        y = false;
+        result = x && !y;
+        System.out.println("При x = true, y = false выражение x && !y = " + result);
+        x = false;
+        y = true;
+        result = x && !y;
+        System.out.println("При a = false, b = true выражение x && !y = " + result);
+        x = false;
+        y = false;
+        result = x && !y;
+        System.out.println("При a = false, b = false выражение x && !y = " + result);
+        System.out.println();
+
+        System.out.println("Задание 3.15");
+        // а)
+        a = true;
+        b = true;
+        result = !a || !b;
+        System.out.println("При a = true, b = true выражение !a || !b = " + result);
+        a = true;
+        b = false;
+        result = !a || !b;
+        System.out.println("При a = true, b = false выражение !a || !b = " + result);
+        a = false;
+        b = true;
+        result = !a || !b;
+        System.out.println("При a = false, b = true выражение !a || !b = " + result);
+        a = false;
+        b = false;
+        result = !a || !b;
+        System.out.println("При a = false, b = false выражение !a || !b = " + result);
+        System.out.println();
+        // б)
+        a = true;
+        b = true;
+        result = a && (a || !b);
+        System.out.println("При a = true, b = true выражение a && (a || !b) = " + result);
+        a = true;
+        b = false;
+        result = a && (a || !b);
+        System.out.println("При a = true, b = false выражение a && (a || !b) = " + result);
+        a = false;
+        b = true;
+        result = a && (a || !b);
+        System.out.println("При a = false, b = true выражение a && (a || !b) = " + result);
+        a = false;
+        b = false;
+        result = a && (a || !b);
+        System.out.println("При a = false, b = false выражение a && (a || !b) = " + result);
+        System.out.println();
+        // в)
+        a = true;
+        b = true;
+        result = (!a || b) && b;
+        System.out.println("При a = true, b = true выражение (!a || b) && b = " + result);
+        a = true;
+        b = false;
+        result = (!a || b) && b;
+        System.out.println("При a = true, b = false выражение (!a || b) && b = " + result);
+        a = false;
+        b = true;
+        result = (!a || b) && b;
+        System.out.println("При a = false, b = true выражение (!a || b) && b = " + result);
+        a = false;
+        b = false;
+        result = (!a || b) && b;
+        System.out.println("При a = false, b = false выражение (!a || b) && b = " + result);
+
+    }
+}
